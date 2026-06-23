@@ -136,6 +136,7 @@ def get_task2definition_from_biggen():
     }
     return task2definition
 
+#this function is loading extracted principles
 def load_extracted_principle_and_definition():
     extracted_principles_data = pd.read_csv("extracted_principles.tsv", sep="\t")
     temp_dict = {}
@@ -150,6 +151,7 @@ def load_extracted_principle_and_definition():
     
     return temp_dict
 
+#this function is loading generated principles
 def load_zeroshot_principle_and_definition():
     extracted_principles_data = pd.read_csv("generated_principles.tsv", sep="\t")
     temp_dict = {}
